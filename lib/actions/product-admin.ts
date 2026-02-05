@@ -33,7 +33,7 @@ export async function createProduct(formData: FormData) {
   const stock = formData.get('stock') as string;
 
   if (!name || !price || !categoryId || !brandId || !genderId || !imageUrl || !colorId || !sizeId) {
-    return { error: "Missing required fields" };
+    throw new Error("Missing required fields");
   }
 
   const productId = uuidv4();
@@ -84,7 +84,7 @@ export async function createProduct(formData: FormData) {
     revalidatePath('/products');
   } catch (error) {
     console.error("Failed to create product:", error);
-    return { error: "Failed to create product" };
+    throw new Error("Failed to create product");
   }
 
   redirect('/admin/products');

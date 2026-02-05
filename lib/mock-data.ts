@@ -31,6 +31,7 @@ export const mockProducts: MockProduct[] = [
   {
     id: '00000000-0000-0000-0000-000000000001',
     name: "Air One Dark",
+    slug: "air-one-dark",
     description: "High-performance running shoe.",
     price: 24000,
     category: { name: "Performance", slug: "performance" },
@@ -51,6 +52,7 @@ export const mockProducts: MockProduct[] = [
   {
     id: '00000000-0000-0000-0000-000000000002',
     name: "Void Runner",
+    slug: "void-runner",
     description: "Lifestyle shoe for everyday comfort.",
     price: 19000,
     category: { name: "Lifestyle", slug: "lifestyle" },
@@ -70,6 +72,7 @@ export const mockProducts: MockProduct[] = [
   {
     id: '00000000-0000-0000-0000-000000000003',
     name: "Onyx Stealth",
+    slug: "onyx-stealth",
     description: "Racing shoe designed for speed.",
     price: 28000,
     category: { name: "Racing", slug: "racing" },

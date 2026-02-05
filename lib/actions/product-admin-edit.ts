@@ -35,7 +35,7 @@ export async function updateProduct(formData: FormData) {
   // Just basic info: Name, Description, Price, Stock, Image
 
   if (!id || !name || !price) {
-    return { error: "Missing required fields" };
+    throw new Error("Missing required fields");
   }
 
   try {
@@ -92,7 +92,7 @@ export async function updateProduct(formData: FormData) {
     revalidatePath(`/products/${product[0]?.slug}`);
   } catch (error) {
     console.error("Failed to update product:", error);
-    return { error: "Failed to update product" };
+    throw new Error("Failed to update product");
   }
 
   redirect('/admin/products');

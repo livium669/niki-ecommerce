@@ -132,7 +132,7 @@ export async function getAdminOrders({
   return { data, totalPages, currentPage: page };
 }
 
-export async function updateOrderStatus(orderId: string, status: 'pending' | 'processing' | 'shipped' | 'delivered' | 'cancelled') {
+export async function updateOrderStatus(orderId: string, status: 'pending' | 'paid' | 'shipped' | 'delivered' | 'cancelled') {
   try {
     await db.update(orderTable)
       .set({ status })

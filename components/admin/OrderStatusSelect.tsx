@@ -34,7 +34,7 @@ export default function OrderStatusSelect({ orderId, currentStatus }: OrderStatu
     switch(s) {
       case 'delivered': return 'text-green-400';
       case 'shipped': return 'text-blue-400';
-      case 'processing': return 'text-yellow-400';
+      case 'paid': return 'text-yellow-400';
       case 'cancelled': return 'text-red-400';
       default: return 'text-zinc-400';
     }
@@ -53,7 +53,7 @@ export default function OrderStatusSelect({ orderId, currentStatus }: OrderStatu
         `}
       >
         <option value="pending" className="text-zinc-400">Pending</option>
-        <option value="processing" className="text-yellow-400">Processing</option>
+        <option value="paid" className="text-yellow-400">Paid</option>
         <option value="shipped" className="text-blue-400">Shipped</option>
         <option value="delivered" className="text-green-400">Delivered</option>
         <option value="cancelled" className="text-red-400">Cancelled</option>

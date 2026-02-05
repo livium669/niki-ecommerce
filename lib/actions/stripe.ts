@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { validateCoupon } from './coupon';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_mock_key', {
-  apiVersion: '2025-01-27.acacia', // Use latest or appropriate version
+  apiVersion: '2025-01-27.acacia' as any, // Use latest or appropriate version
 });
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
@@ -289,8 +289,8 @@ export async function handleCheckoutSuccess(sessionId: string) {
     }
 
     // 1. Create Addresses
-    const shippingDetails = session.shipping_details;
-    const customerDetails = session.customer_details;
+    const shippingDetails = (session as any).shipping_details;
+    const customerDetails = (session as any).customer_details;
 
     const shippingAddressId = uuidv4();
     const billingAddressId = uuidv4();

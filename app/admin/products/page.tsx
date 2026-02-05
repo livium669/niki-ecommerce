@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Image from 'next/image';
 import { getAdminProducts } from '@/lib/actions/admin';
 import Link from 'next/link';
 import Pagination from '@/components/ui/Pagination';

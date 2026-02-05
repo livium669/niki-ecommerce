@@ -7,7 +7,7 @@ import { formUrlQuery } from '@/lib/utils/query';
 const ORDER_STATUSES = [
   { label: 'All Statuses', value: 'all' },
   { label: 'Pending', value: 'pending' },
-  { label: 'Processing', value: 'processing' },
+  { label: 'Paid', value: 'paid' },
   { label: 'Shipped', value: 'shipped' },
   { label: 'Delivered', value: 'delivered' },
   { label: 'Cancelled', value: 'cancelled' },

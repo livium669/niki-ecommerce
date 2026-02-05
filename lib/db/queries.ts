@@ -145,6 +145,11 @@ export async function getProductBySlug(slug: string) {
 
   return {
     ...product,
+    variants: product.variants.map(v => ({
+      ...v,
+      price: Number(v.price),
+      salePrice: v.salePrice ? Number(v.salePrice) : null,
+    })),
     minPrice: minP,
     maxPrice: maxP
   };
