@@ -2,6 +2,8 @@
 
 ![Niki Premium Screenshot](./public/assets/screenshot.webp)
 
+[Live Demo](https://niki-ecommerce.vercel.app/)
+
 Niki is a high-end e-commerce platform dedicated to premium footwear, designed with a "cinematic" user experience. It combines modern web technologies with immersive design to create a fluid and engaging shopping journey.
 
 ## 🚀 Features
