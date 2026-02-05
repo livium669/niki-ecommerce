@@ -74,8 +74,8 @@ Niki is a high-end e-commerce platform dedicated to premium footwear, designed w
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/niki-premium.git
-    cd niki-premium
+    git clone https://github.com/yourusername/niki-ecommerce.git
+    cd niki-ecommerce
     ```
 
 2.  **Install dependencies:**
