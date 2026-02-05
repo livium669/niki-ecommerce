@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+
+build/
+.next/
+out/
+jspm_packages/
+bower_components/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
