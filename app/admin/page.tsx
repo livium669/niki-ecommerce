@@ -65,7 +65,7 @@ export default async function AdminDashboardPage() {
                         inline-block px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider
                         ${order.status === 'delivered' ? 'bg-green-500/20 text-green-400' : 
                           order.status === 'shipped' ? 'bg-blue-500/20 text-blue-400' :
-                          order.status === 'processing' ? 'bg-yellow-500/20 text-yellow-400' :
+                          order.status === 'paid' ? 'bg-yellow-500/20 text-yellow-400' :
                           order.status === 'cancelled' ? 'bg-red-500/20 text-red-400' :
                           'bg-zinc-500/20 text-zinc-400'}
                       `}>
